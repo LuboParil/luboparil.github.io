@@ -1,6 +1,6 @@
 :root {
-	--font_default: 'Josefin Sans', sans-serif;
-	--font_headers: 'Abril Fatface', serif;
+	--font_default: 'Roboto', sans-serif;
+	--font_headers: 'Archivo Black', sans-serif;
 	--font_subtitles-h4: 'Merriweather', serif;
 }
 
@@ -77,9 +77,9 @@ blockquote::before {
 	content: '”';
 	transform: rotate(180deg);
 	position: absolute;
-	top: -43px;
+	top: -30px;
 	left: -1px;
-	font-size: 148px;
+	font-size: 135px;
 }
 
 /* LAYOUT */
@@ -88,7 +88,8 @@ body {
 	color: #333;
 }
 header {
-	background: no-repeat #ddd center url("http://myfirstapp-syllabus.greenfox.academy/week01/assets/first-website-header.png");
+	background: no-repeat #ddd center 
+		url("./first-website-header.png");
 	background-size: cover;
 	border-top: 5px solid #85144B;
 }
