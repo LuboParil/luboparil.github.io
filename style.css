@@ -1,33 +1,36 @@
-* {
-	/*background-color: rgba(0,0,0,.1);
-	/*view tester*/
-	/* 	margin: 0;
-	padding: 0; */
+:root {
+	--font_default: 'Josefin Sans', sans-serif;
+	--font_headers: 'Abril Fatface', serif;
+	--font_subtitles-h4: 'Merriweather', serif;
 }
+
+/* * {
+	background-color: rgba(0,0,0,.1);
+	margin: 0;
+	padding: 0;
+} */
+
 /* FONTS & TEXT FORMAT */
 * {
-	font-family: 'Josefin Sans', sans-serif;
-	color: #333;
+	font-family: var(--font_default);
 	line-height: 160%;
 }
 header h1 {
-	font-family: 'Abril Fatface', serif;
+	font-family: var(--font_headers);
 	font-size: 70px;
-	color: #222 grey;
+	color: #85144B;
 	margin: 0;
 	font-weight: regular;
 } 
 header p {
-	font-family: 'Abril Fatface', serif;
+	font-family: var(--font_headers);
 	font-size: 36px;
 	margin-bottom: -29px;
-/* 	color: #222 grey; */
+	color: #85144B;
 }
 blockquote {
-	font-family: 'Abril Fatface', serif;
+	font-family: var(--font_headers);
 	font-size: 47px;
-	color: #fff;
-	background-color: #444;
 }
 h2 {
 	font-size: 23px;
@@ -39,7 +42,7 @@ h3 {
 	margin: 0 0 -4px;
 }
 h4 {
-	font-family: 'Merriweather', serif;
+	font-family: var(--font_subtitles-h4);
 	font-style: italic;
 	margin: 0;
 }
@@ -59,16 +62,35 @@ p, li {
 }
 .higher-text-block {
 	font-size: 129%;
+	color: #85144B;
+}
+blockquote {
+	padding: 45px;
+	margin-left: -45px;
+	margin-right: -45px;
+	box-sizing: border-box;
+	position: relative;
+	color: #fff;
+	background-color: #85144B;
+}
+blockquote::before {
+	content: '”';
+	transform: rotate(180deg);
+	position: absolute;
+	top: -43px;
+	left: -1px;
+	font-size: 148px;
 }
 
 /* LAYOUT */
 body {
 	margin: 0;
+	color: #333;
 }
 header {
 	background: no-repeat #ddd center url("http://myfirstapp-syllabus.greenfox.academy/week01/assets/first-website-header.png");
 	background-size: cover;
-	border-top: 5px solid #666;
+	border-top: 5px solid #85144B;
 }
 
 header .container {
@@ -86,23 +108,7 @@ li {
 	list-style-type: square;
 }
 
-blockquote {
-	padding: 45px;
-	margin-left: -45px;
-	margin-right: -45px;
-	box-sizing: border-box;
-	position: relative;
-}
-blockquote::before {
-	content: '”';
-	transform: rotate(180deg);
-	position: absolute;
-	top: -43px;
-	left: -1px;
-	font-size: 148px;
-}
-
 hr {
-	border-top: 4px solid #333;
+	border-top: 4px solid #85144B;
 	margin: 50px -20px;
 }
